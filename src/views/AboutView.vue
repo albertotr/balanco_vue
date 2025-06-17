@@ -1,5 +1,7 @@
 <template>
-  <main>ABOUT</main>
+  <h2>Welcome to the About</h2>
+  <p>This is the home page content.</p>
 </template>
 
-<style></style>
+<script setup>
+</script>
