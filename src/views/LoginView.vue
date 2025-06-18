@@ -35,7 +35,6 @@ const login = async () => {
     try {
         await fetchCsrfToken(); // Captura o token CSRF antes de fazer login
         const response = await api.post("login", form.value); // Faz a requisição POST
-        console.log(response.data);
         useAuthStore().setUser(response.data.user); // Atualiza o usuário no store
         useAuthStore().setToken(response.data.access_token); // Atualiza o token no store
         router.push('/'); // Redireciona para a home após o login
