@@ -1,8 +1,5 @@
 <template>
     <div>
-        <header>
-            <h1>Default Layout</h1>
-        </header>
         <main>
             <slot></slot> <!-- Aqui o conteúdo da rota será renderizado -->
         </main>
