@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/HomeView.vue";
-import About from "@/views/AboutView.vue";
 import Login from "@/views/LoginView.vue";
 import { useAuthStore } from "@/stores/authStore";
+import MobileAddRecord from "@/views/mobileAddRecord.vue";
 
 const routes = [
   {
@@ -12,9 +12,9 @@ const routes = [
     meta: { requiresAuth: true, layout: "AuthLayout" }, // Rota protegida
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
+    path: "/mobileAddRecord",
+    name: "MobieAddRecord",
+    component: MobileAddRecord,
     meta: { requiresAuth: true, layout: "AuthLayout" }, // Rota protegida
   },
   {
